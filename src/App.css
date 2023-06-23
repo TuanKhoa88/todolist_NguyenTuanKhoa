@@ -1,38 +1,114 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+div.purchase {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 5px 0px 10px 0px;
+}
+
+table input {
+  font-size: 14px;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span.price {
+  background-color: #CCCCCC;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.purchase div.picture-info a.price:hover {
+  opacity: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+div.purchase div.picture-info {
+  position: relative;
+}
+
+.price {
+  text-decoration: none;
+  border-radius: 2px;
+  background-color: #FF3333;
+  cursor: pointer;
+}
+
+.btn-bora {
+  border-radius: 5px;
+}
+
+div.purchase div.picture-info p {
+  padding-right: 100px;
+}
+
+div.purchase div.picture-info a.price,
+div.purchase div.picture-info span.price {
+  font-size: 14px;
+  background-color: #FF3333;
   color: white;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  padding: 5px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+div.purchase div.picture-info span.price {
+  background-color: #BDBDBD;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  width: 150px;
+  height: auto;
+}
+
+
+.custom-card {
+  border: 1px solid lightpink;
+}
+
+.custom-card-header {
+  background-color: lightpink;
+  color: white;
+  padding: 10px;
+}
+
+.total-price {
+  margin-left: 50px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #FF3333;
+
+}
+.text-total {
+  padding: 15px;
+}
+
+#cartitem input {
+  max-width: 50px;
+}
+#report {
+  margin-top: 50px;
+}
+
+div.purchase div.picture-info input {
+  max-width: 80px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+
+}
+
+.picture-info {
+  margin-left: 10px;
 }

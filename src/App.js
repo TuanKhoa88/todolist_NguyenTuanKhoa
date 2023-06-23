@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ListProducts from "./Components/Listproducts";
+import YourCarts from "./Components/YourCarts";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div>
+        <h1 style={{ margin: "40px 0"}}>
+          MiniProject - Shopping Cart <small style={{ fontSize : '20px' }} className="text-muted">ReactJS</small>
+        </h1>
+      </div>
+      <div className="row">
+        <ListProducts></ListProducts>
+        <YourCarts></YourCarts>
+      </div>
     </div>
   );
 }
